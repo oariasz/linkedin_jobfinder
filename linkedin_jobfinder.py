@@ -152,13 +152,15 @@ if __name__ == "__main__":
 
     # Set paths for config and WebDriver
     CONFIG_PATH = "config.json"  # Path to configuration file
-    DRIVER_PATH = "/path/to/chromedriver"  # Path to WebDriver
+    DRIVER_PATH = "/./chromedriver"  # Path to WebDriver
 
     # Create an instance of LinkedInJobScraper
     scraper = LinkedInJobScraper(CONFIG_PATH, DRIVER_PATH)
 
     # Start the timer
     start_time = timer()
+
+    print('Welcome to LinkedIn Job Finder (Estratek)!')
 
     # Log in to LinkedIn
     scraper.login()
